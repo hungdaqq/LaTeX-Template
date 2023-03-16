@@ -11,10 +11,13 @@
 \usepackage{listings}
 \usepackage{tikz}
 \usepackage{pdflscape}
+\usepackage{pdflscape}
+\usepackage{multirow}
 \usepackage{float}
 \usepackage{polynom}
 \usepackage{hyperref}
 \usepackage{tabularx}
+\usepackage{tabularray}
 \usepackage{forloop}
 \usepackage{geometry}
 \usepackage{fancybox}
@@ -25,9 +28,9 @@
 \usepackage{sectsty}
 \usepackage{titlesec}
 \usepackage{caption}
-\usepackage{subcaption}
+\usepackage{subfig}
 \usepackage{float}
-\usepackage{lipsum}
+\usepackage{multirow}
 \usepackage[nameinlink]{cleveref}
 \renewcommand{\arraystretch}{1.2}
 \usepackage{chngcntr}
@@ -42,7 +45,7 @@
 \MakeOuterQuote{"}
 
 %-----------------------set automated numbering--------------------------------%
-\subsubsectionfont{\fontsize{14}{18} \selectfont}
+\subsubsectionfont{\fontsize{13}{18} \selectfont}
 \titleformat{\section}
 {\normalfont\LARGE\bfseries}{Chương~\thesection:}{1em}{}
 
@@ -59,6 +62,6 @@
 %-----------------------set figure format--------------------------------------%
 \DeclareCaptionFormat{custom}
 {
-    \fontsize{12}{15} \selectfont \textbf{#1#2}\textit{#3}
+    \fontsize{12}{15} \selectfont \textbf{#1#2}\textsl{#3}
 }
 \captionsetup{format=custom}
